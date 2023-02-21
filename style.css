@@ -81,7 +81,7 @@ h2{
 }
 #about_us {
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 10vh;
   width: 75vw;
   display: flex;
   position: relative;;
@@ -92,4 +92,25 @@ h2{
   justify-content: center;
   align-items: center;
   background-color: rgba(92, 90, 90, 0.842);
+}
+#kontakt{
+  position: relative;
+  display:flex;
+  align-items: center;
+  justify-content: left;
+  z-index: 998;
+  margin-top: 20vh;
+  margin-bottom: 15vh;
+  height: 30vh;
+  width: auto;
+  background-color:rgba(59, 55, 55, 0.377);
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  border-radius: 15px;
+}
+#kontakt img{
+  height: 30vh;
+}
+#kontakt p {
+  font-size: 60px;
 }
