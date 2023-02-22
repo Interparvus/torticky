@@ -25,6 +25,6 @@ const paralax = document.querySelector("body");
 console.log(paralax);
 window.addEventListener("scroll", function (){
     let offset = window.pageYOffset;
-    paralax.style.backgroundPositionY= offset * 0.5 + "px";
+    paralax.style.backgroundPositionY= offset * 0.6 + "px";
     
 });
