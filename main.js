@@ -20,11 +20,14 @@ window.onscroll = function() { // add scroll event listener
       }
     }
   }
+  const parallaxImages = document.querySelectorAll('.parallax img');
 
-const paralax = document.querySelector("body");
-console.log(paralax);
-window.addEventListener("scroll", function (){
-    let offset = window.pageYOffset;
-    paralax.style.backgroundPositionY= offset * 0.6 + "px";
-    
-});
+  window.addEventListener('scroll', () => {
+    parallaxImages.forEach(image => {
+      const scrollPosition = window.pageYOffset;
+      const speed = parseFloat(image.dataset.speed) || 1; 
+      const yPos = (scrollPosition * speed * 0.4); 
+  
+      image.style.transform = `translateY(${yPos}px)`;
+    });
+  });
