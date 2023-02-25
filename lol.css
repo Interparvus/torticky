@@ -19,7 +19,8 @@
     display: flex;
     place-content: flex-end flex-start;
     flex-flow: row nowrap;
-    
+    justify-content: center;
+    align-items: center;
     font-weight: bold;
     text-transform: uppercase;
     color: white;
@@ -50,6 +51,8 @@
     max-width: 50%;
     max-height: 50%;
     transition: all 0.5s ease;
+    justify-content: center;
+    align-items: center;
 }
 .linky img:hover{
     scale: 200%;
